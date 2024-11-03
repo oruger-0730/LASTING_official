@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* ロゴリンクのスタイル */
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 20px; /* ロゴとリンク間のスペース */
+}
+
+.logo-image {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+/* ヘッダーボタンのスタイル - 左詰め */
+.header-button {
+    display: flex;
+    gap: 15px;
+}
+
+.header-button a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.header-button a:hover {
+    background-color: #e0e0e0;
+}
+
+.progress-title {
+    font-size: 2em;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 進捗リストのスタイル */
+.progress-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* 各進捗項目のスタイル */
+.progress-item {
+    width: 300px;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: left;
+}
+
+/* 日付と内容のスタイル */
+.progress-date {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.progress-content {
+    font-size: 1em;
+}
