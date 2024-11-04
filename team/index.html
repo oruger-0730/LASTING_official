@@ -1,64 +1,65 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang=ja>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
     <title>管理者チームリスト</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel=stylesheet href=style.css>
 </head>
-<body>
-    <header>
-        <a href="../index.html" class="logo-link">
-            <img src="../PNG/IMG_2767.png" alt="Cold Sword Logo" class="logo-image">
-            <span class="logo-text">LASTING</span>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-emerald-500 text-white shadow-md p-4 flex justify-between items-center">
+        <a href=../index.html class="flex items-center space-x-3">
+            <img src=https://lasting.f5.si/PNG/IMG_2767.png alt="Cold Sword Logo" class="h-10 w-10">
+            <span class="text-2xl font-bold">LASTING</span>
         </a>
-        <div class="header-button">
-            <a href="/info">LASTINGについて</a>
-            <a href="/team">管理者チーム</a>
-            <a href="/progress">開発進捗</a>
-            <a href="/server">サーバー稼働状況</a>
-        </div>
+        <nav class=space-x-6>
+            <a href=/info class="text-white hover:text-gray-300">LASTINGについて</a>
+            <a href=/team class="text-white hover:text-gray-300">管理者チーム</a>
+            <a href=/progress class="text-white hover:text-gray-300">開発進捗</a>
+            <a href=/server class="text-white hover:text-gray-300">サーバー稼働状況</a>
+        </nav>
     </header>
-    <!-- タイトル -->
-    <h1 class="team-title">LASTING 管理者チーム</h1>
 
-    <!-- 管理者チームリスト -->
-    <div class="team-list">
-        <div class="member-card">
-            <img src="../PNG/IMG_2654.png" alt="写真" class="member-photo">
-            <div class="member-info">
-                <p>名前: オルガー</p>
-                <p>役割: 開発リーダー</p>
-                <p>コメント: 新しいプロジェクトを進めています！</p>
+    <main class="py-8 px-4">
+        <h1 class="text-center text-4xl font-bold text-indigo-700 mb-10">LASTING 管理者チーム</h1>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src=https://lasting.f5.si/PNG/IMG_2654.png alt=オルガー class="w-full h-48 object-cover">
+                <div class=p-4>
+                    <h2 class="text-xl font-bold text-indigo-700">名前: オルガー</h2>
+                    <p class=text-gray-600>役割: 開発リーダー</p>
+                    <p class="mt-2 text-gray-800">新しいプロジェクトを進めています！</p>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src=https://lasting.f5.si/PNG/IMG_2877.png alt=Yamatomato class="w-full h-48 object-cover">
+                <div class=p-4>
+                    <h2 class="text-xl font-bold text-indigo-700">名前: Yamatomato</h2>
+                    <p class=text-gray-600>役割: 開発者</p>
+                    <p class="mt-2 text-gray-800"></p>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src=https://lasting.f5.si/PNG/IMG_2789.png alt=tp-li class="w-full h-48 object-cover">
+                <div class=p-4>
+                    <h2 class="text-xl font-bold text-indigo-700">名前: tp-li</h2>
+                    <p class=text-gray-600>役割: 情報管理者</p>
+                    <p class="mt-2 text-gray-800">安心・安全な利用を支える、開発・サポートを全力で提供します</p>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src=https://lasting.f5.si/PNG/IMG_2358.png alt=オンプ class="w-full h-48 object-cover">
+                <div class=p-4>
+                    <h2 class="text-xl font-bold text-indigo-700">名前: オンプ</h2>
+                    <p class=text-gray-600>役割: デザイナー</p>
+                    <p class="mt-2 text-gray-800"></p>
+                </div>
             </div>
         </div>
-
-        <div class="member-card">
-            <img src="../PNG/IMG_2877.png" alt="写真" class="member-photo">
-            <div class="member-info">
-                <p>名前: Yamatomato</p>
-                <p>役割: 開発者</p>
-                <p>コメント: </p>
-            </div>
-        </div>
-
-        <div class="member-card">
-            <img src="../PNG/IMG_2789.png" alt="写真" class="member-photo">
-            <div class="member-info">
-                <p>名前: tp-li</p>
-                <p>役割: 情報管理者</p>
-                <p>コメント: 安心・安全な利用を支える、開発・サポートを全力で提供します</p>
-            </div>
-        </div>
-
-        <div class="member-card">
-            <img src="../PNG/IMG_2358.png" alt="写真" class="member-photo">
-            <div class="member-info">
-                <p>名前: オンプ</p>
-                <p>役割: デザイナー</p>
-                <p>コメント: </p>
-            </div>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
