@@ -4,30 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>公式ホームページ</title>
-    <!-- 外部CSSファイルの読み込み -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- ヘッダー -->
-    <header>
-        <a href="/index.html" class="logo-link">
-            <img src="/PNG/IMG_2767.png" alt="Cold Sword Logo" class="logo-image">
-            <span class="logo-text">LASTING</span>
+<body class="bg-gray-100 text-gray-800 flex flex-col h-screen">
+    <header class="bg-emerald-500 text-white shadow-md p-4 flex justify-between items-center">
+        <a href="../index.html" class="flex items-center space-x-3">
+            <img src="https://lasting.f5.si/PNG/IMG_2767.png" alt="Cold Sword Logo" class="h-10 w-10">
+            <span class="text-2xl font-bold">LASTING</span>
         </a>
-        <div class="header-button">
-            <a href="/info">LASTIGについて</a>
-            <a href="/team">管理者チーム</a>
-            <a href="/progress">開発進捗</a>
-            <a href="/server">サーバー稼働状況</a>
-        </div>
+        <nav class="space-x-6">
+            <a href="/info" class="text-white hover:text-gray-300">LASTINGについて</a>
+            <a href="/team" class="text-white hover:text-gray-300">管理者チーム</a>
+            <a href="/progress" class="text-white hover:text-gray-300">開発進捗</a>
+            <a href="/server" class="text-white hover:text-gray-300">サーバー稼働状況</a>
+        </nav>
     </header>
 
     <!-- メインコンテンツ -->
-    <main>
+    <main class="flex flex-col items-center justify-center flex-grow bg-gray-100">
         <!-- タイトル -->
-        <h1 class="main-title">COLD SWORD</h1>
+        <h1 class="text-5xl font-bold text-gray-800 mb-8">COLD SWORD</h1>
         <!-- 遊ぼうボタン -->
-        <a  target="_blank" class="play-button">開発中</a>
+        <a target="_blank" class="px-8 py-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition duration-300">開発中</a>
     </main>
 </body>
 </html>
