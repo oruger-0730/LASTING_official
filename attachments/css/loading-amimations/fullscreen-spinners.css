@@ -1,0 +1,23 @@
+.loading span {
+    display: block;
+    height: 89%; 
+    width: 89%; 
+    border: 1px solid transparent;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+@for $i from 1 through 16 {
+  /* this was a fail. i'm not sure how to get the nested children. o_O */
+    .loading span:nth-child(#{$i}) {
+
+            -webkit-animation: spin #{1 + ($i * 0.89)}s infinite linear;
+    }
+}
+@-webkit-keyframes spin {
+    0% {
+         -webkit-transform: rotate(0deg);   
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
